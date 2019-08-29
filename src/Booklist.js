@@ -30,7 +30,7 @@ export default class Booklist extends Component {
         <h3>This is Booklist</h3>
 
         {this.state.books.map((item, index) => (
-          <Book info={item} />
+          <Book key={index} info={item} />
         ))}
       </section>
     );
